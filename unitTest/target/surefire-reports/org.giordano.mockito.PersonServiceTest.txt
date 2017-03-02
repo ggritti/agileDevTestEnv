@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.giordano.mockito.PersonServiceTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.983 sec <<< FAILURE! - in org.giordano.mockito.PersonServiceTest
+shouldNotUpdateIfPersonNotFound(org.giordano.mockito.PersonServiceTest)  Time elapsed: 0.014 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.giordano.mockito.PersonServiceTest.shouldNotUpdateIfPersonNotFound(PersonServiceTest.java:49)
+

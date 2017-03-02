@@ -1,0 +1,4 @@
+org\giordano\mockito\IPersonDAO.class
+org\giordano\test\App.class
+org\giordano\mockito\Person.class
+org\giordano\mockito\PersonService.class
