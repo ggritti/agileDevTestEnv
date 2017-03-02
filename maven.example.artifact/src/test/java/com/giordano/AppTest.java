@@ -27,7 +27,7 @@ public class AppTest
     }
 
     /**
-     * Rigourous Test :-) Polling test 3
+     * Rigourous Test :-) Polling test 35
      */
     public void testApp() {
         assertTrue(true);
