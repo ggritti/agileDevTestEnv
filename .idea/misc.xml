@@ -4,6 +4,13 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/maven.example.artifact/pom.xml" />
+        <option value="$PROJECT_DIR$/gs-rest-service/pom.xml" />
+        <option value="$PROJECT_DIR$/gs-securing-ldap/pom.xml" />
+        <option value="$PROJECT_DIR$/gs-securing-web/pom.xml" />
+        <option value="$PROJECT_DIR$/gs-serving-web-content/pom.xml" />
+        <option value="$PROJECT_DIR$/helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/hybernate/pom.xml" />
+        <option value="$PROJECT_DIR$/unitTest/pom.xml" />
       </list>
     </option>
   </component>

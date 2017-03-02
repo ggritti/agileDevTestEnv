@@ -6,11 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="gs-rest-service" />
+        <module name="gs-securing-ldap" />
+        <module name="gs-securing-web" />
+        <module name="gs-serving-web-content" />
+        <module name="helloworld" />
+        <module name="hybernate" />
         <module name="maven.example.artifact" />
+        <module name="unitTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="gs-rest-service" target="1.8" />
+      <module name="gs-securing-ldap" target="1.8" />
+      <module name="gs-securing-web" target="1.8" />
+      <module name="gs-serving-web-content" target="1.8" />
+      <module name="helloworld" target="1.5" />
+      <module name="hybernate" target="1.5" />
       <module name="maven.example.artifact" target="1.5" />
+      <module name="unitTest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
