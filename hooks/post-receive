@@ -1,2 +1,2 @@
 #!/bin/sh
-curl http://localhost:8080/jenkins/git/notifyCommit?url=https://github.com/ggritti/agileDevTestEnv
+curl http://localhost:8080/jenkins/git/notifyCommit?url=git@github.com:ggritti/agileDevTestEnv.git
