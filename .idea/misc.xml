@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/helloworld/pom.xml" />
         <option value="$PROJECT_DIR$/hybernate/pom.xml" />
         <option value="$PROJECT_DIR$/unitTest/pom.xml" />
+        <option value="$PROJECT_DIR$/lambda-examples/pom.xml" />
       </list>
     </option>
   </component>

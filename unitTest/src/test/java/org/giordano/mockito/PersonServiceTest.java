@@ -39,6 +39,13 @@ public class PersonServiceTest {
         assertEquals("David", updatedPerson.getPersonName());
         // asserts that during the test, there are no other calls to the mock object.
         verifyNoMoreInteractions(personDAO);
+
+        //Updated of a second person
+        person = new Person (002, "Giordano");
+        when(personDAO.fetchPerson(002)).thenReturn(person);
+        updated = personService.update(002, "GiordanoUPD");
+        assertTrue(updated);
+
     }
 
     @Test

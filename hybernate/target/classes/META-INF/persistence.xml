@@ -8,7 +8,7 @@
 	<persistence-unit name="EmployeePU">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<properties>
-			<property name="hibernate.connection.url" value="jdbc:mysql://localhost/eclipsetest" />
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost/intellij_db" />
 			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
 			<property name="hibernate.connection.username" value="root" />
 			<property name="hibernate.connection.password" value="G10rd4n0" />
