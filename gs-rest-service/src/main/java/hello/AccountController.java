@@ -18,7 +18,6 @@ public class AccountController {
 
         // Switch-case construct example with literals with Java 7 and up
         String returnedNameString = getNameString(name);
-
         return new Account(counter.incrementAndGet(), returnedNameString, lastname);
     }
 
