@@ -39,23 +39,30 @@ import thymeleafexamples.gtvg.web.controller.IGTVGController;
 
 public class GTVGFilter implements Filter {
 
-    
+
     private ServletContext servletContext;
     private GTVGApplication application;
-    
-    
+
+
     public GTVGFilter() {
         super();
     }
-    
-    
-    
+
+
     private static void addUserToSession(final HttpServletRequest request) {
         // Simulate a real user session by adding a user object
-        request.getSession(true).setAttribute("user", new User("John", "Apricot", "Antarctica", null));
+
+        // request.getSession(true).setAttribute("user", new User("John", "Apricot", "Antarctica", null));
+        String firstNameReq = request.getParameter("firstName");
+        String lastNameReq = request.getParameter("lastName");
+        boolean isRealUserInSession = false;
+        System.out.println("test");
+
+        if (firstNameReq != null && lastNameReq != null && !isRealUserInSession) {
+            // firstName and lastName persisted in session during the first access
+            request.getSession(true).setAttribute("user", new User(firstNameReq, lastNameReq, "Antarctica", null));
+        }
     }
-
-
 
 
     public void init(final FilterConfig filterConfig) throws ServletException {
@@ -64,29 +71,23 @@ public class GTVGFilter implements Filter {
     }
 
 
-
-
     public void doFilter(final ServletRequest request, final ServletResponse response,
-            final FilterChain chain) throws IOException, ServletException {
-        addUserToSession((HttpServletRequest)request);
-        if (!process((HttpServletRequest)request, (HttpServletResponse)response)) {
+                         final FilterChain chain) throws IOException, ServletException {
+        addUserToSession((HttpServletRequest) request);
+        if (!process((HttpServletRequest) request, (HttpServletResponse) response)) {
             chain.doFilter(request, response);
         }
     }
-
-
 
 
     public void destroy() {
         // nothing to do
     }
 
-    
-
 
     private boolean process(HttpServletRequest request, HttpServletResponse response)
             throws ServletException {
-        
+
         try {
 
             // This prevents triggering engine executions for resource URLs
@@ -126,9 +127,9 @@ public class GTVGFilter implements Filter {
              */
             controller.process(
                     request, response, this.servletContext, templateEngine);
-            
+
             return true;
-            
+
         } catch (Exception e) {
             try {
                 response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
@@ -137,9 +138,8 @@ public class GTVGFilter implements Filter {
             }
             throw new ServletException(e);
         }
-        
+
     }
-    
-    
-    
+
+
 }

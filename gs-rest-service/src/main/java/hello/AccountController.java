@@ -34,8 +34,8 @@ public class AccountController {
             return nameStr;
         }
         switch (name.toLowerCase()) {
-            case "giordano":
-                nameStr = "returnGiordano1";
+            case "giordano1":
+                nameStr = "returnedGiordano1";
                 break;
             case "giordano2":
                 nameStr = "returnedGiordano2";
@@ -44,7 +44,7 @@ public class AccountController {
                 nameStr = "returnedGiordano3";
                 break;
             default:
-                nameStr = "returnedGiordanoDef";
+                nameStr = "returnedGiordanoDefault";
                 break;
         }
         return nameStr;

@@ -5,8 +5,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-	<p th:text="'Hello, ' + ${name} + '!'" />
-	<!-- thymeleaf example -->
+	<!-- <p th:text="'Hello, ' + ${name} + '!'" />
+	thymeleaf example
 	<table>
 		<thead>
 			<tr>
@@ -20,6 +20,20 @@
 				<td th:text="${name}">0.99</td>
 			</tr>
 		</tbody>
+	</table> -->
+
+	<table>
+		<thead>
+		<tr>
+			<th th:text="${name}">Name</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr th:each="prod: ${allProducts}">
+			<td th:text="${name}">Oranges</td>
+		</tr>
+		</tbody>
 	</table>
+
 </body>
 </html>

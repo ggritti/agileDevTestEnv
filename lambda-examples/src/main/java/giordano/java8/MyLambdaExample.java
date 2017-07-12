@@ -10,9 +10,9 @@ public class MyLambdaExample {
     public static void main(String[] args) {
 
         // applyFilter();
-        // applyFunctionsToList();
+        applyFunctionsToList();
         // applyTaxesRates();
-        createStringFilteredList();
+        // createStringFilteredList();
     }
 
     /**

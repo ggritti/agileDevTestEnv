@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/hybernate/pom.xml" />
         <option value="$PROJECT_DIR$/unitTest/pom.xml" />
         <option value="$PROJECT_DIR$/lambda-examples/pom.xml" />
+        <option value="$PROJECT_DIR$/javaencryption/pom.xml" />
+        <option value="$PROJECT_DIR$/thymeleafexamples-gtvg-3.0-master/pom.xml" />
       </list>
     </option>
   </component>

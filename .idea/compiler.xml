@@ -10,8 +10,10 @@
         <module name="gs-securing-ldap" />
         <module name="gs-securing-web" />
         <module name="gs-serving-web-content" />
+        <module name="gtvg" />
         <module name="helloworld" />
         <module name="hybernate" />
+        <module name="javaencryption" />
         <module name="lambda-examples" />
         <module name="maven.example.artifact" />
         <module name="unitTest" />
@@ -22,10 +24,12 @@
       <module name="gs-securing-ldap" target="1.8" />
       <module name="gs-securing-web" target="1.8" />
       <module name="gs-serving-web-content" target="1.8" />
-      <module name="helloworld" target="1.8" />
-      <module name="hybernate" target="1.8" />
+      <module name="gtvg" target="1.5" />
+      <module name="helloworld" target="1.5" />
+      <module name="hybernate" target="1.5" />
+      <module name="javaencryption" target="1.5" />
       <module name="lambda-examples" target="1.8" />
-      <module name="maven.example.artifact" target="1.8" />
+      <module name="maven.example.artifact" target="1.5" />
       <module name="unitTest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
